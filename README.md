@@ -30,6 +30,15 @@ sudo apt-get install ros-humble-joint-state-publisher
 ros2 launch world.launch.py
 ```
 
+## Launch
+
+```
+killall gzserver && killall gzclient
+rm -rf build/ install/ log/ && colcon build
+source install/setup.bash
+ros2 launch sjtu_drone_bringup sjtu_drone_gazebo.launch.py
+```
+
 ## Author
 
 This project was developed by [Boringtao](https://twitter.com/BoringtaoL22644).
