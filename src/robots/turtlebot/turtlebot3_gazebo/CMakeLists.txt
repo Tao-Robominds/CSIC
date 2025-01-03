@@ -14,7 +14,8 @@ find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 
-install(DIRECTORY launch models rviz urdf worlds
+install(
+  DIRECTORY launch models worlds
   DESTINATION share/${PROJECT_NAME}/
 )
 
