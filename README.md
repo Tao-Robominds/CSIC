@@ -36,6 +36,8 @@ ros2 launch world.launch.py
 killall gzserver && killall gzclient
 rm -rf build/ install/ log/ && colcon build
 source install/setup.bash
+source install/setup.bash && ros2 launch sjtu_drone_bringup sjtu_drone_tunnel.launch.py
+
 ros2 launch sjtu_drone_bringup sjtu_drone_gazebo.launch.py
 ros2 topic pub /drone/takeoff std_msgs/msg/Empty "{}" --once
 ros2 topic pub /drone/land std_msgs/msg/Empty "{}" --once
