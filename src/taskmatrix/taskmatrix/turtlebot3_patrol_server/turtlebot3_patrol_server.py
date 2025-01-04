@@ -28,7 +28,7 @@ from rclpy.duration import Duration
 from rclpy.node import Node
 from rclpy.qos import QoSProfile
 
-from turtlebot3_example.turtlebot3_patrol_server.turtlebot3_path \
+from taskmatrix.turtlebot3_patrol_server.turtlebot3_path \
     import Turtlebot3Path
 from turtlebot3_msgs.action import Patrol
 

@@ -18,14 +18,17 @@
 
 import rclpy
 
-from turtlebot3_example.turtlebot3_patrol_client.turtlebot3_patrol_client \
-    import Turtlebot3PatrolClient
+from taskmatrix.turtlebot3_obstacle_detection.turtlebot3_obstacle_detection \
+    import Turtlebot3ObstacleDetection
 
 
 def main(args=None):
     rclpy.init(args=args)
-    turtlebot3_patrol_client = Turtlebot3PatrolClient()
-    rclpy.spin(turtlebot3_patrol_client)
+    turtlebot3_obstacle_detection = Turtlebot3ObstacleDetection()
+    rclpy.spin(turtlebot3_obstacle_detection)
+
+    turtlebot3_obstacle_detection.destroy_node()
+    rclpy.shutdown()
 
 
 if __name__ == '__main__':

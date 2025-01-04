@@ -18,17 +18,14 @@
 
 import rclpy
 
-from turtlebot3_example.turtlebot3_patrol_server.turtlebot3_patrol_server \
-    import Turtlebot3PatrolServer
+from taskmatrix.turtlebot3_patrol_client.turtlebot3_patrol_client \
+    import Turtlebot3PatrolClient
 
 
 def main(args=None):
     rclpy.init(args=args)
-    turtlebot3_patrol_server = Turtlebot3PatrolServer()
-    rclpy.spin(turtlebot3_patrol_server)
-
-    turtlebot3_patrol_server.destroy()
-    rclpy.shutdown()
+    turtlebot3_patrol_client = Turtlebot3PatrolClient()
+    rclpy.spin(turtlebot3_patrol_client)
 
 
 if __name__ == '__main__':

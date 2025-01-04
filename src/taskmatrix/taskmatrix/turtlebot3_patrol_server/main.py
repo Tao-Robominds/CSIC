@@ -18,16 +18,16 @@
 
 import rclpy
 
-from turtlebot3_example.turtlebot3_position_control.turtlebot3_position_control \
-    import Turtlebot3PositionControl
+from taskmatrix.turtlebot3_patrol_server.turtlebot3_patrol_server \
+    import Turtlebot3PatrolServer
 
 
 def main(args=None):
     rclpy.init(args=args)
-    turtlebot3_position_control = Turtlebot3PositionControl()
-    rclpy.spin(turtlebot3_position_control)
+    turtlebot3_patrol_server = Turtlebot3PatrolServer()
+    rclpy.spin(turtlebot3_patrol_server)
 
-    turtlebot3_position_control.destroy_node()
+    turtlebot3_patrol_server.destroy()
     rclpy.shutdown()
 
 
