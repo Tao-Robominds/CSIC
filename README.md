@@ -42,4 +42,4 @@ ros2 launch turtlebot3_gazebo empty_world.launch.py
 
 ## Author
 
-This project was developed by [Boringtao](https://twitter.com/BoringtaoL22644).
+This project was developed by [Boringtao].

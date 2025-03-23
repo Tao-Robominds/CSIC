@@ -1,3 +1,20 @@
 {
-    "cmake.ignoreCMakeListsMissing": true
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "ros.distro": "humble",
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**",
+        "/opt/ros/humble/include/**",
+        "/usr/include/**",
+        "/usr/include/pcl-1.10/**",
+        "/usr/include/eigen3/**"
+    ],
+    "C_Cpp.errorSquiggles": "enabled",
+    "cmake.configureOnOpen": true
 }
